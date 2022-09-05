@@ -1,68 +1,87 @@
+body {
+    --photo-size: 100px;
+    --font-size: 16px;
+}
+
 .main-section {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(215, 255, 251);
+    padding: 20vh;
 }
+
 .card-wrapper {
-width: 300px;
-height: 400px;
-background-color: white;
-margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
 
 }
+
 .header {
-width: 100%;
-height: 35%;
-background-image: url('./');
+    width: 100%;
+    height: 35%;
+    background-image: url('./images/beautiful-shot-of-a-whet-field-with-a-cloudy-sky_181624-26320.jpg');
 }
+
 .card-content {
-width: 100%;
+    width: 100%;
 }
+
 .avatar {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-display: block;
-margin: 0 auto;
-margin-top: -55%;
-border: 2px solid white;
-object-fit: cover;
+    width: var(--photo-size);
+    height: var(--photo-size);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: calc(var(--photo-size) / 2 * (-1));
+    border: 2px solid white;
+    object-fit: cover;
 }
+
 .user-name {
-text-align: center;
-margin: 3% 0%;
-font-size: 30px;
+    text-align: center;
+    margin: 3% 0%;
+    font-size: 30px;
 }
+
 .user-position {
-text-align: center;
-margin: 2% 0%;
-font-size: 16px;
+    text-align: center;
+    margin: 2% 0%;
+    font-size: 16px;
 }
+
 .follow-button {
-font-size: 20px;
-padding: 8px 20px;
-border: 2px solid blue;
-color: blue;
-border-radius: 20px;
-display: block;
-margin: 5% auto;
+    font-size: calc(var(--font-size) + 2px);
+    padding: 8px 20px;
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 20px;
+    display: block;
+    margin: 5% auto;
 
 }
+
 .stats-wrapper {
-margin-top: 8%;
-width: 100%;
+    margin-top: 8%;
 }
+
 .user-stats {
-display: inline-block;
-width: 30%;
+    display: inline-block;
+    width: 30%;
 }
+
 .stats-header {
-text-align: center;
-font-size: 20px;
-font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
 }
+
 .stats-type {
-text-align: center;
-font-size: 16px;
+    font-size: var(--font-size);
+}
+
+.text-center {
+    text-align: center;
 }
